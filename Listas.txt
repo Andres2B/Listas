@@ -61,17 +61,17 @@ int main() {
     int dato, nuevo, opcion;
 
     do {
-        cout << "\n1. Ingresar número\n";
-        cout << "2. Mostrar números\n";
-        cout << "3. Editar número\n";
-        cout << "4. Eliminar número\n";
+        cout << "\n1. Ingresar numero\n";
+        cout << "2. Mostrar numeros\n";
+        cout << "3. Editar numero\n";
+        cout << "4. Eliminar numero\n";
         cout << "5. Salir\n";
-        cout << "\nElige una opción: ";
+        cout << "\nElige una opcion: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-                cout << "Ingrese un número: ";
+                cout << "Ingrese un numero: ";
                 cin >> dato;
                 insertar(lista, dato);
                 break;
@@ -79,14 +79,14 @@ int main() {
                 mostrar(lista);
                 break;
             case 3:
-                cout << "Ingrese el número a editar: ";
+                cout << "Ingrese el numero a editar: ";
                 cin >> dato;
-                cout << "Ingrese el nuevo número: ";
+                cout << "Ingrese el nuevo numero: ";
                 cin >> nuevo;
                 editar(lista, dato, nuevo);
                 break;
             case 4:
-                cout << "Ingrese el número a eliminar: ";
+                cout << "Ingrese el numero a eliminar: ";
                 cin >> dato;
                 eliminar(lista, dato);
                 break;
@@ -94,7 +94,7 @@ int main() {
                 cout << "Saliendo...\n";
                 break;
             default:
-                cout << "Opción inválida\n";
+                cout << "Opcion invalida\n";
         }
     } while (opcion != 5);
 
