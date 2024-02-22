@@ -16,7 +16,7 @@ void insertar(Nodo*& lista, int n) {
 void mostrar(Nodo* lista) {
     int i = 0;
     while (lista != NULL) {
-        cout << "Posición " << i << ": " << lista->dato << "\n";
+        cout << "Posicion " << i << ": " << lista->dato << "\n";
         lista = lista->siguiente;
         i++;
     }
